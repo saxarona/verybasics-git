@@ -1,0 +1,170 @@
+\documentclass{}{beamer}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\usetheme{Dresden}
+\usecolortheme{whale}
+
+\parskip=1.3ex
+\newcommand{\spacepls}{\vspace{1.5Ex}}
+
+\title{The very basics of Git}
+\subtitle{Git for the non-programmer}
+
+\author[X. Sánchez-Díaz]{Xavier~Sánchez-Díaz}
+\institute[ITESM]{Center For Intelligent Computing and Robotics\\
+Tecnológico de Monterrey, Campus Monterrey}
+\date{\today}
+\subject{The very basics of git}
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\begin{frame}[allowframebreaks]
+	\frametitle{Outline}
+	\tableofcontents
+\end{frame}
+
+\section{Preamble} % (fold)
+\label{sec:preamble}
+
+\subsection{The UNIX Philosophy} % (fold)
+\label{sec:philosophy}
+
+\begin{frame}[t]
+	\frametitle{Everything is a file}
+	\framesubtitle{The UNIX philosophy}
+
+	\spacepls
+
+	\begin{itemize}
+		\item Source code is stored in files. \pause
+		\item Word documents are files. \pause
+		\item Photos are files. \pause
+		\item Videos are files. \pause
+		\item HDDs and USBs are files. \pause
+	\end{itemize}
+
+	\spacepls
+	{\huge Everything \pause is \pause a \pause file.}\\
+\end{frame}
+
+\begin{frame}[t]
+	\frametitle{Everything is a file}
+	\framesubtitle{The UNIX philosophy}
+
+	\spacepls
+
+	Since everything is a file, it makes sense to keep track of the changes of your projects using git, no matter what you're working on!
+	
+\end{frame}
+
+% subsection philosophy (end)
+
+\subsection{What is git?} % (fold)
+\label{sub:what_is_git}
+
+\begin{frame}[t]
+	\frametitle{What is Git?}
+	\framesubtitle{And why should I use it?}
+
+	\spacepls
+
+	Git is a {\color{OliveGreen}free and open source} \alert{distributed} {\color{MidnightBlue}version control system}. \pause
+
+	\begin{block}{Version control system}	
+		A system that allows easy management project versions.
+	\end{block} \pause
+
+	\begin{alertblock}{Distributed}	
+		Not centralized. Everyone on the team has their own local copy.
+	\end{alertblock} \pause
+
+	\begin{exampleblock}{Free and Open Source}	
+		Git is distributed according to a GPLv2 License.
+	\end{exampleblock}
+	
+\end{frame}
+
+
+\begin{frame}[t]
+	\frametitle{Free speech, not free beer}
+	\framesubtitle{What is Git?}
+
+	Git is free software since it respects the four essential freedoms of the user: \pause
+
+	\begin{itemize}
+		\item Freedom to use the program as you wish, for any purpose. \pause
+		\item Freedom to modify the software as you want. The source code is there for you to look at and modify at will. \pause
+		\item Freedom to share or redistribute copies as you wish to help your neighbor. \pause
+		\item Freedom to share or redistribute copies of your modified versions to others.
+	\end{itemize}
+	
+\end{frame}
+
+\begin{frame}[t]
+	\frametitle{What is Git?}
+	\framesubtitle{And why should I use it?}
+
+	A version control system tracks changes on projects.
+	It is a useful tool to keep track of the following: \pause
+
+	\begin{itemize}
+		\item What changed since the last version? \pause
+		\item When was the last modification? \pause
+		\item Who was the last person on the team to modify this file? \pause
+		\item Which version is the one I'm looking for? \pause
+	\end{itemize}
+
+	So you can avoid having filenames like \texttt{Projectfina3lastrev18.doc} or \texttt{Projectfinal(this\_is\_th\_one)}.
+
+\end{frame}
+
+% subsection what_is_git (end)
+
+\subsection{Git is not Github} % (fold)
+\label{sub:git-not-github}
+
+\begin{frame}[allowframebreaks]
+	\frametitle{Git is not Github}
+	\framesubtitle{Let's get it right}
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.45\textwidth]{logo}
+		\label{fig:git_logo}
+	\end{figure}
+
+	\textbf{Git} is the software: a technology and a work flow methodology.
+
+	\framebreak
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.25\textwidth]{octocat}
+		\label{fig:github_logo}
+	\end{figure}
+
+	\textbf{Github} is a website that offers `free' (as in free beer) hosting of open source projects. Github uses the Git methodology.
+\end{frame}
+
+% subsection git-not-github (end)
+% section preamble (end)
+
+% TODO:
+% git workflow
+% modify, add, commit, push
+% collaborative tool
+% branches, merges, tags
+% how shell works
+% actual git commands
+% the help command
+% more on the website
+% thank you
+
+\end{document}
